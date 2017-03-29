@@ -1,0 +1,115 @@
+# ***************************************************************************
+# GENERATED:
+#   Time:    28-Mar-2017 19:36PM
+#   By:      Lajaunie Ronald-B01784
+#   Command: origen g pin_clock -t dut.rb -e v93k.rb
+# ***************************************************************************
+# ENVIRONMENT:
+#   Application
+#     Source:    git@github.com:Origen-SDK/origen_testers.git
+#     Version:   0.9.4
+#     Branch:    coverage90(c3ec548da86) (+local edits)
+#   Origen
+#     Source:    https://github.com/Origen-SDK/origen
+#     Version:   0.7.46
+#   Plugins
+#     atp:                      0.5.4
+#     origen_arm_debug:         0.4.3
+#     origen_doc_helpers:       0.4.4
+#     origen_jtag:              0.14.0
+#     origen_swd:               0.5.0
+# ***************************************************************************
+FORMAT TCLK TDI TDO TMS;
+#                                                   t t t t
+#                                                   c d d m
+#                                                   l i o s
+#                                                   k      
+# [PinClock] Start tdi.clock at 0: period=240ns, cycles=4, duty=2/2
+# Wait for 5.0us
+R1                       tp0                        X 0 X X # R2 [PinClock] Start tdi.clock at 0: period=240ns, cycles=4, duty=2/2Wait for 5.0us;
+R1                       tp0                        X 0 X X # R1 ;
+R1                       tp0                        X 1 X X # R2 ;
+R1                       tp0                        X 1 X X # R1 ;
+R1                       tp0                        X 0 X X # R2 ;
+R1                       tp0                        X 0 X X # R1 ;
+R1                       tp0                        X 1 X X # R2 ;
+R1                       tp0                        X 1 X X # R1 ;
+R1                       tp0                        X 0 X X # R2 ;
+R1                       tp0                        X 0 X X # R1 ;
+R1                       tp0                        X 1 X X # R2 ;
+R1                       tp0                        X 1 X X # R1 ;
+R1                       tp0                        X 0 X X # R2 ;
+R1                       tp0                        X 0 X X # R1 ;
+R1                       tp0                        X 1 X X # R2 ;
+R1                       tp0                        X 1 X X # R1 ;
+R1                       tp0                        X 0 X X # R2 ;
+R1                       tp0                        X 0 X X # R1 ;
+R1                       tp0                        X 1 X X # R2 ;
+R1                       tp0                        X 1 X X # R1 ;
+R1                       tp0                        X 0 X X # R2 ;
+R1                       tp0                        X 0 X X # R1 ;
+R1                       tp0                        X 1 X X # R2 ;
+R1                       tp0                        X 1 X X # R1 ;
+R1                       tp0                        X 0 X X # R2 ;
+R1                       tp0                        X 0 X X # R1 ;
+R1                       tp0                        X 1 X X # R2 ;
+R1                       tp0                        X 1 X X # R1 ;
+R1                       tp0                        X 0 X X # R2 ;
+R1                       tp0                        X 0 X X # R1 ;
+R1                       tp0                        X 1 X X # R2 ;
+R1                       tp0                        X 1 X X # R1 ;
+R1                       tp0                        X 0 X X # R2 ;
+R1                       tp0                        X 0 X X # R1 ;
+R1                       tp0                        X 1 X X # R2 ;
+R1                       tp0                        X 1 X X # R1 ;
+R1                       tp0                        X 0 X X # R2 ;
+R1                       tp0                        X 0 X X # R1 ;
+R1                       tp0                        X 1 X X # R2 ;
+R1                       tp0                        X 1 X X # R1 ;
+R1                       tp0                        X 0 X X # R2 ;
+R1                       tp0                        X 0 X X # R1 ;
+R1                       tp0                        X 1 X X # R2 ;
+R1                       tp0                        X 1 X X # R1 ;
+R1                       tp0                        X 0 X X # R2 ;
+R1                       tp0                        X 0 X X # R1 ;
+R1                       tp0                        X 1 X X # R2 ;
+R1                       tp0                        X 1 X X # R1 ;
+R1                       tp0                        X 0 X X # R2 ;
+R1                       tp0                        X 0 X X # R1 ;
+R1                       tp0                        X 1 X X # R2 ;
+R1                       tp0                        X 1 X X # R1 ;
+R1                       tp0                        X 0 X X # R2 ;
+R1                       tp0                        X 0 X X # R1 ;
+R1                       tp0                        X 1 X X # R2 ;
+R1                       tp0                        X 1 X X # R1 ;
+R1                       tp0                        X 0 X X # R2 ;
+R1                       tp0                        X 0 X X # R1 ;
+R1                       tp0                        X 1 X X # R2 ;
+R1                       tp0                        X 1 X X # R1 ;
+R1                       tp0                        X 0 X X # R2 ;
+R1                       tp0                        X 0 X X # R1 ;
+R1                       tp0                        X 1 X X # R2 ;
+R1                       tp0                        X 1 X X # R1 ;
+R1                       tp0                        X 0 X X # R2 ;
+R1                       tp0                        X 0 X X # R1 ;
+R1                       tp0                        X 1 X X # R2 ;
+R1                       tp0                        X 1 X X # R1 ;
+R1                       tp0                        X 0 X X # R2 ;
+R1                       tp0                        X 0 X X # R1 ;
+R1                       tp0                        X 1 X X # R2 ;
+R1                       tp0                        X 1 X X # R1 ;
+R1                       tp0                        X 0 X X # R2 ;
+R1                       tp0                        X 0 X X # R1 ;
+R1                       tp0                        X 1 X X # R2 ;
+R1                       tp0                        X 1 X X # R1 ;
+R1                       tp0                        X 0 X X # R2 ;
+R1                       tp0                        X 0 X X # R1 ;
+R1                       tp0                        X 1 X X # R2 ;
+R1                       tp0                        X 1 X X # R1 ;
+R1                       tp0                        X 0 X X # R2 ;
+R1                       tp0                        X 0 X X # R1 ;
+R1                       tp0                        X 1 X X # ;
+# ######################################################################
+# ## Pattern complete
+# ######################################################################
+SQPG STOP;

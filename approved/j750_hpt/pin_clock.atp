@@ -1,0 +1,82 @@
+// ***************************************************************************
+// GENERATED:
+//   Time:    28-Mar-2017 19:53PM
+//   By:      Lajaunie Ronald-B01784
+//   Command: origen g pin_clock -t dut.rb -e j750_hpt.rb
+// ***************************************************************************
+// ENVIRONMENT:
+//   Application
+//     Source:    git@github.com:Origen-SDK/origen_testers.git
+//     Version:   0.9.4
+//     Branch:    coverage90(c3ec548da86) (+local edits)
+//   Origen
+//     Source:    https://github.com/Origen-SDK/origen
+//     Version:   0.7.46
+//   Plugins
+//     atp:                      0.5.4
+//     origen_arm_debug:         0.4.3
+//     origen_doc_helpers:       0.4.4
+//     origen_jtag:              0.14.0
+//     origen_swd:               0.5.0
+// ***************************************************************************
+import tset tp0;                                                                                
+svm_only_file = no;                                                                             
+opcode_mode = extended;                                                                         
+compressed = yes;                                                                               
+                                                                                                
+vector ($tset, tclk, tdi, tdo, tms)                                                             
+{                                                                                               
+start_label pattern_st:                                                                         
+//                                                                                              t t t t
+//                                                                                              c d d m
+//                                                                                              l i o s
+//                                                                                              k      
+// [PinClock] Start tdi.clock at 0: period=240ns, cycles=4, duty=2/2
+// Wait for 5.0us
+repeat 2                                                         > tp0                          .X .0 .X .X ;
+repeat 2                                                         > tp0                          .X .1 .X .X ;
+repeat 2                                                         > tp0                          .X .0 .X .X ;
+repeat 2                                                         > tp0                          .X .1 .X .X ;
+repeat 2                                                         > tp0                          .X .0 .X .X ;
+repeat 2                                                         > tp0                          .X .1 .X .X ;
+repeat 2                                                         > tp0                          .X .0 .X .X ;
+repeat 2                                                         > tp0                          .X .1 .X .X ;
+repeat 2                                                         > tp0                          .X .0 .X .X ;
+repeat 2                                                         > tp0                          .X .1 .X .X ;
+repeat 2                                                         > tp0                          .X .0 .X .X ;
+repeat 2                                                         > tp0                          .X .1 .X .X ;
+repeat 2                                                         > tp0                          .X .0 .X .X ;
+repeat 2                                                         > tp0                          .X .1 .X .X ;
+repeat 2                                                         > tp0                          .X .0 .X .X ;
+repeat 2                                                         > tp0                          .X .1 .X .X ;
+repeat 2                                                         > tp0                          .X .0 .X .X ;
+repeat 2                                                         > tp0                          .X .1 .X .X ;
+repeat 2                                                         > tp0                          .X .0 .X .X ;
+repeat 2                                                         > tp0                          .X .1 .X .X ;
+repeat 2                                                         > tp0                          .X .0 .X .X ;
+repeat 2                                                         > tp0                          .X .1 .X .X ;
+repeat 2                                                         > tp0                          .X .0 .X .X ;
+repeat 2                                                         > tp0                          .X .1 .X .X ;
+repeat 2                                                         > tp0                          .X .0 .X .X ;
+repeat 2                                                         > tp0                          .X .1 .X .X ;
+repeat 2                                                         > tp0                          .X .0 .X .X ;
+repeat 2                                                         > tp0                          .X .1 .X .X ;
+repeat 2                                                         > tp0                          .X .0 .X .X ;
+repeat 2                                                         > tp0                          .X .1 .X .X ;
+repeat 2                                                         > tp0                          .X .0 .X .X ;
+repeat 2                                                         > tp0                          .X .1 .X .X ;
+repeat 2                                                         > tp0                          .X .0 .X .X ;
+repeat 2                                                         > tp0                          .X .1 .X .X ;
+repeat 2                                                         > tp0                          .X .0 .X .X ;
+repeat 2                                                         > tp0                          .X .1 .X .X ;
+repeat 2                                                         > tp0                          .X .0 .X .X ;
+repeat 2                                                         > tp0                          .X .1 .X .X ;
+repeat 2                                                         > tp0                          .X .0 .X .X ;
+repeat 2                                                         > tp0                          .X .1 .X .X ;
+repeat 2                                                         > tp0                          .X .0 .X .X ;
+                                                                 > tp0                          .X .1 .X .X ;
+// ######################################################################
+// ## Pattern complete
+// ######################################################################
+end_module                                                       > tp0                          .X .1 .X .X ;
+}                                                                                               
